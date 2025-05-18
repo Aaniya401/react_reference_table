@@ -23,8 +23,8 @@ export const titles = [
 export const ageWiseData = [
     {
         age: "2.5 Y",
-        data1: ["apple", "banana", "cherry", "date", "elderberry"],
-        data2: ["frog", "giraffe", "hippo", "iguana", "jackal"],
+        data1: ["Screwing", "banana", "cherry", "date", "elderberry"],
+        data2: [],
         data3: ["kite", "lemon", "mango", "nectarine", "orange"],
         data4: ["piano", "guitar", "violin", "drums", "flute"],
         data5: ["red", "orange", "yellow", "green", "blue"],
