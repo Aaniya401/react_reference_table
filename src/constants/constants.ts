@@ -1,6 +1,6 @@
 export const ages = [
     "All",
-    "2 Y",
+    "2.5 Y",
     "2.5 - 3 Y",
     "3 Y",
     "3 - 3.5 Y",
