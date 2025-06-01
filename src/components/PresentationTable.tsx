@@ -35,25 +35,25 @@ function PresentationTable({ filteredAgeWiseData }) {
 
                         <TableCell className="border-2">
                             <ul>
-                                {element.data2.length === 0 ? 'No Data Available' : element.data1.map((item) => (<li>{item}</li>))}
+                                {element.data2.length === 0 ? 'No Data Available' : element.data2.map((item) => (<li>{item}</li>))}
                             </ul>
                         </TableCell>
 
                         <TableCell className="border-2">
                             <ul>
-                                {element.data3.length === 0 ? 'No Data Available' : element.data1.map((item) => (<li>{item}</li>))}
+                                {element.data3.length === 0 ? 'No Data Available' : element.data3.map((item) => (<li>{item}</li>))}
                             </ul>
                         </TableCell>
 
                         <TableCell className="border-2">
                             <ul>
-                                {element.data4.length === 0 ? 'No Data Available' : element.data1.map((item) => (<li>{item}</li>))}
+                                {element.data4.length === 0 ? 'No Data Available' : element.data4.map((item) => (<li>{item}</li>))}
                             </ul>
                         </TableCell>
 
                         <TableCell className="border-2">
                             <ul>
-                                {element.data5.length === 0 ? 'No Data Available' : element.data1.map((item) => (<li>{item}</li>))}
+                                {element.data5.length === 0 ? 'No Data Available' : element.data5.map((item) => (<li>{item}</li>))}
                             </ul>
                         </TableCell>
 
