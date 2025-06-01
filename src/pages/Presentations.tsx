@@ -1,69 +1,60 @@
-import {
-  Table,
-  TableBody,
-  TableCell,
-  TableHead,
-  TableHeader,
-  TableRow,
-} from "@/components/ui/table"
-import { titles } from "@/constants/constants"
+import PresentationSelect from "@/components/PresentationSelect"Add commentMore actions
+import PresentationTable from "@/components/PresentationTable"
+import { ages } from "@/constants/constants"
+import { useEffect, useState } from "react"
+import { ArrowBigLeft } from "lucide-react"
+import { useNavigate } from "react-router-dom"
+import PreviousTrigger from "@/components/PreviousTrigger"
+import { ageWiseData, titles } from "@/constants/constants"
+import NextTrigger from "@/components/NextTrigger"
+import { motion } from "motion/react"
 
-function PresentationTable({ filteredAgeWiseData }) {
+function Presentations() {
+  const navigate = useNavigate()
+
+  const [selectedAge, setSelectedAge] = useState<string>('All')
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null)
+  const [isPreviousVisible, setIsPreviousVisible] = useState<boolean>(false)
+  const [isNextVisible, setIsNextVisible] = useState<boolean>(false)
+
+  useEffect(() => {
+    console.log(selectedAge);
+    const index = ages.indexOf(selectedAge)
+    setCurrentIndex(index)
+  }, [selectedAge, setSelectedAge])
+
+
+  const filteredAgeWiseData = (selectedAge === '' || selectedAge === 'All') ? ageWiseData : (
+    ageWiseData.filter((element) => element.age === selectedAge)
+  )
+
+
   return (
-    <div className="w-full overflow-x-auto">
-      <Table className="min-w-full table-auto border border-gray-300 rounded-lg shadow-md">
-        <TableHeader className="bg-gradient-to-r from-purple-100 to-pink-100">
-          <TableRow>
-            {titles.map((element, idx) => (
-              <TableHead
-                key={idx}
-                className="text-[16px] font-semibold text-gray-800 px-4 py-3 border-b border-gray-300"
-              >
-                {element.name}
-              </TableHead>
-            ))}
-          </TableRow>
-        </TableHeader>
+    <motion.div
+      initial={{ opacity: 0, x: -20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      className="gap-6 text-black p-10 w-screen flex flex-col items-center"
+    >
+      <button onClick={() => navigate('/')} className="absolute top-2 left-2 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full p-2 text-white cursor-pointer z-10">
+        <ArrowBigLeft />
+      </button>
 
-        <TableBody className="text-[15px] text-gray-700">
-          {filteredAgeWiseData.length === 0 ? (
-            <TableRow>
-              <TableCell colSpan={6} className="text-center py-4">
-                No data available
-              </TableCell>
-            </TableRow>
-          ) : (
-            filteredAgeWiseData.map((element, rowIdx) => (
-              <TableRow
-                key={rowIdx}
-                className={`${rowIdx % 2 === 0 ? "bg-white" : "bg-gray-50"} transition duration-300 hover:bg-gray-100`}
-              >
-                <TableCell className="font-medium px-4 py-3 border">
-                  {element.age}
-                </TableCell>
+      <h1 className="lg:text-4xl text-4xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500">
+        List of Presentations
+      </h1>
 
-                {[element.data1, element.data2, element.data3, element.data4, element.data5].map(
-                  (data, i) => (
-                    <TableCell key={i} className="px-4 py-3 border align-top">
-                      {data.length === 0 ? (
-                        <span className="italic text-gray-400">No Data Available</span>
-                      ) : (
-                        <ul className="list-disc list-inside space-y-1">
-                          {data.map((item, idx) => (
-                            <li key={idx}>{item}</li>
-                          ))}
-                        </ul>
-                      )}
-                    </TableCell>
-                  )
-                )}
-              </TableRow>
-            ))
-          )}
-        </TableBody>
-      </Table>
-    </div>
+
+      <PresentationSelect selectedAge={selectedAge} setSelectedAge={setSelectedAge} setIsPreviousVisible={setIsPreviousVisible} setIsNextVisible={setIsNextVisible} />
+
+      {selectedAge !== 'All' && <PreviousTrigger currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} setSelectedAge={setSelectedAge} isPreviousVisible={isPreviousVisible} setIsPreviousVisible={setIsPreviousVisible} isNextVisible={isNextVisible} setIsNextVisible={setIsNextVisible} />}
+
+      <PresentationTable filteredAgeWiseData={filteredAgeWiseData} />
+
+      {selectedAge !== 'All' && <NextTrigger currentIndex={currentIndex} setCurrentIndex={setCurrentIndex} setSelectedAge={setSelectedAge} isPreviousVisible={isPreviousVisible} setIsPreviousVisible={setIsPreviousVisible} isNextVisible={isNextVisible} setIsNextVisible={setIsNextVisible} />}
+
+    </motion.div>
   )
 }
 
-export default PresentationTable
+export default Presentations
