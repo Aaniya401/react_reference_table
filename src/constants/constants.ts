@@ -20,7 +20,7 @@ export const titles = [
   { name: "Sensorial", color: "blue" },
   { name: "English", color: "blue" },
   { name: "Mathematics", color: "blue" },
-  { name: "Culture", color: "blue" }
+  { name: "Culture", color: "blue" },
   { name: "Hindi", color: "blue" }
 ];
 
@@ -36,7 +36,8 @@ export const ageWiseData = [
     data2: [],
     data3: ["Classified Pictures", "Sound Game", "Question Game", "News Period", "Parts Of Speech Games"],
     data4: [],
-    data5: []
+    data5: [],
+    data6: ["Conversations in Hindi", "Ispy (बुझो तो जानू मैं कौन हूँ, जो शुरू होता है…)" , "Songs"],
   },
   {
     age: "2.5 - 3 Y",
@@ -44,7 +45,8 @@ export const ageWiseData = [
     data2: ["Cylinder Blocks", "Touch Boards"],
     data3: [],
     data4: [],
-    data5: []
+    data5: [],
+    data6: []
   },
   {
     age: "3 Y",
@@ -52,7 +54,8 @@ export const ageWiseData = [
     data2: ["Pink Tower", "Brown Stairs", "Colour Tablets Box 1", "Colour Tablets Box 2", "Colour Tablets Box 3", "Touch Tablets"],
     data3: [],
     data4: [],
-    data5: []
+    data5: [],
+    data6: [ ]"स्वर tracing","व्यंजन tracing", "Ispy", "अपने आसपास की चीजों का नामकरण करना (name things in the environment)",
   },
   {
     age: "3 - 3.5 Y",
@@ -60,7 +63,8 @@ export const ageWiseData = [
     data2: ["Stereognostic Bag 1", "Stereognostic Bag 2", "Stereognostic Bag 3", "Stereognostic Bag 4"],
     data3: [],
     data4: [],
-    data5: []
+    data5: [],
+    data6: [] 
   },
   {
     age: "3.5 Y",
@@ -71,7 +75,8 @@ export const ageWiseData = [
     ],
     data3: ["Sandpaper Letters"],
     data4: [],
-    data5: ["Sandpaper Globe", "Coloured Globe", "Land And Water Forms", "Puzzle Maps", "Picture Folders"]
+    data5: ["Sandpaper Globe", "Coloured Globe", "Land And Water Forms", "Puzzle Maps", "Picture Folders"],
+    data6: ["स्वर tracing","व्यंजन tracing"]
   },
   {
     age: "3.5 - 4 Y",
@@ -79,7 +84,9 @@ export const ageWiseData = [
     data2: ["Geometric Solids"],
     data3: [],
     data4: [],
-    data5: []
+    data5: [],
+    data6: [ "चल अक्षर पेटी"]  
+ ]
   },
   {
     age: "4 Y",
@@ -91,7 +98,8 @@ export const ageWiseData = [
     ],
     data3: ["Moveable Alphabets", "Metal Insets", "Object Box 1", "Object Box 2"],
     data4: ["Number Rods", "Sandpaper Numerals", "Number Rods And Cards", "Spindle Box", "Cards And Counters", "Memory Game"],
-    data5: ["Flags And Pin Maps", "Roman Arch"]
+    data5: ["Flags And Pin Maps", "Roman Arch"],
+    data6: [ "मात्रा परिचय","बारहखड़ी" ]
   },
   {
     age: "4 - 4.5 Y",
@@ -102,7 +110,8 @@ export const ageWiseData = [
     ],
     data3: ["Action Cards"],
     data4: [],
-    data5: []
+    data5: [],
+    data6: []
   },
   {
     age: "4.5 Y",
@@ -114,7 +123,8 @@ export const ageWiseData = [
       "Teen Beads", "Teen Boards", "Teen Beads And Board", "Tens Beads And Boards",
       "Linear Counting", "Skip Counting", "Fractions", "Fractions Addition Multiplication Subtraction Division"
     ],
-    data5: []
+    data5: [],
+    data6: []
   },
   {
     age: "5 Y",
@@ -128,7 +138,8 @@ export const ageWiseData = [
       "Dot Game", "Addition Snake Game", "Addition Strip Board",
       "Subtraction Snake Game", "Subtraction Strip Board"
     ],
-    data5: []
+    data5: [],
+    data6: [ "संज्ञा","क्रिया","विशेषण"]
   },
   {
     age: "5 - 5.5 Y",
@@ -136,7 +147,8 @@ export const ageWiseData = [
     data2: [],
     data3: [],
     data4: ["Addition Chart 1", "Addition Chart 2", "Addition Chart 3", "Addition Blank Chart"],
-    data5: []
+    data5: [],
+    data6: ["संयुक्ताक्षर","वचन","विलोम शब्द","लिंग"]
   },
   {
     age: "5.5 Y",
@@ -152,7 +164,8 @@ export const ageWiseData = [
       "Multiplication Bead Bar", "Multiplication Chart 1", "Multiplication Chart 2", "Multiplication Chart 3",
       "Unit Division Board", "Short Bead Frame - Addition Subtraction Multiplication Division", "Hierarchies"
     ],
-    data5: []
+    data5: [],
+    data6: []
   },
   {
     age: "5.5 - 6 Y",
@@ -160,7 +173,8 @@ export const ageWiseData = [
     data2: [],
     data3: [],
     data4: ["Subtraction Chart 1", "Subtraction Chart 2", "Division Chart 1", "Division Chart 2"],
-    data5: []
+    data5: [],
+    data6: []
   },
   {
     age: "6 Y",
@@ -168,6 +182,7 @@ export const ageWiseData = [
     data2: [],
     data3: ["Reading Analysis"],
     data4: ["Long Bead Frame", "Long Bead Frame Addition Multiplication Subtraction", "Division With Rack And Tubes"],
-    data5: []
+    data5: [],
+    data6: []
   }
 ];
