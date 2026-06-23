@@ -37,7 +37,7 @@ export const ageWiseData = [
     data3: ["Classified Pictures", "Sound Game", "Question Game", "News Period", "Parts Of Speech Games"],
     data4: [],
     data5: [],
-    data6: ["Conversations in Hindi", "Ispy (बुझो तो जानू मैं कौन हूँ, जो शुरू होता है…)" , "Songs"],
+    data6: ["Conversations in Hindi", "Ispy (बुझो तो जानू मैं कौन हूँ, जो शुरू होता है…)" , "Songs"]
   },
   {
     age: "2.5 - 3 Y",
@@ -55,7 +55,7 @@ export const ageWiseData = [
     data3: [],
     data4: [],
     data5: [],
-    data6: [ ]"स्वर tracing","व्यंजन tracing", "Ispy", "अपने आसपास की चीजों का नामकरण करना (name things in the environment)",
+    data6: []
   },
   {
     age: "3 - 3.5 Y",
@@ -69,9 +69,7 @@ export const ageWiseData = [
   {
     age: "3.5 Y",
     data1: ["Flower Arrangement", "Bells"],
-    data2: [
-      "Red Rods", "Geometric Cabinets", "Geometric Cabinets And Cards", "Fabrics Box", "Thermic Tablets",
-      "Baric Tablets", "Stereognostic Tray", "Tasting Bottles", "Smelling Bottles", "Sound Boxes"
+    data2: [ "Red Rods", "Geometric Cabinets", "Geometric Cabinets And Cards", "Fabrics Box", "Thermic Tablets", "Baric Tablets", "Stereognostic Tray", "Tasting Bottles", "Smelling Bottles", "Sound Boxes"
     ],
     data3: ["Sandpaper Letters"],
     data4: [],
@@ -85,28 +83,23 @@ export const ageWiseData = [
     data3: [],
     data4: [],
     data5: [],
-    data6: [ "चल अक्षर पेटी"]  
+    data6: ["चल अक्षर पेटी"]  
  ]
   },
   {
     age: "4 Y",
     data1: [],
-    data2: [
-      "Decanomial Square", "Binomial Cube", "Trinomial Cube",
-      "Constructive Triangles Box 1", "Constructive Triangles Box 2",
-      "Thermic Tablets", "Mystery Bag"
+    data2: ["Decanomial Square", "Binomial Cube", "Trinomial Cube","Constructive Triangles Box 1", "Constructive Triangles Box 2","Thermic Tablets", "Mystery Bag"
     ],
     data3: ["Moveable Alphabets", "Metal Insets", "Object Box 1", "Object Box 2"],
     data4: ["Number Rods", "Sandpaper Numerals", "Number Rods And Cards", "Spindle Box", "Cards And Counters", "Memory Game"],
     data5: ["Flags And Pin Maps", "Roman Arch"],
-    data6: [ "मात्रा परिचय","बारहखड़ी" ]
+    data6: ["मात्रा परिचय","बारहखड़ी"]
   },
   {
     age: "4 - 4.5 Y",
     data1: ["Bow Frame", "Lace Frame"],
-    data2: [
-      "Constructive Triangles Box 3", "Constructive Triangles Box 4",
-      "Constructive Triangles Box 5", "Constructive Triangles Box 6", "Graded Figures"
+    data2: ["Constructive Triangles Box 3", "Constructive Triangles Box 4","Constructive Triangles Box 5", "Constructive Triangles Box 6", "Graded Figures"
     ],
     data3: ["Action Cards"],
     data4: [],
@@ -118,11 +111,8 @@ export const ageWiseData = [
     data1: [],
     data2: ["Knobless Cylinders"],
     data3: ["Puzzle Words", "Reading Folders", "Environmental Cards", "Classified Reading"],
-    data4: [
-      "Decimal System", "Addition Multiplication Subtraction Division", "Stamp Game Addition Multiplication Subtraction Division",
-      "Teen Beads", "Teen Boards", "Teen Beads And Board", "Tens Beads And Boards",
-      "Linear Counting", "Skip Counting", "Fractions", "Fractions Addition Multiplication Subtraction Division"
-    ],
+    data4: ["Decimal System", "Addition Multiplication Subtraction Division", "Stamp Game Addition Multiplication Subtraction Division","Teen Beads", "Teen Boards", "Teen Beads And Board", "Tens Beads And Boards",
+      "Linear Counting", "Skip Counting", "Fractions", "Fractions Addition Multiplication Subtraction Division"],
     data5: [],
     data6: []
   },
@@ -130,14 +120,9 @@ export const ageWiseData = [
     age: "5 Y",
     data1: [],
     data2: [],
-    data3: [
-      "Capitals", "Punctuation", "Definition Stages", "Article", "Adjective", "Logical Adjective",
-      "Detective Adjective", "Conjunction", "Preposition"
+    data3: ["Capitals", "Punctuation", "Definition Stages", "Article", "Adjective", "Logical Adjective", "Detective Adjective", "Conjunction", "Preposition"
     ],
-    data4: [
-      "Dot Game", "Addition Snake Game", "Addition Strip Board",
-      "Subtraction Snake Game", "Subtraction Strip Board"
-    ],
+    data4: ["Dot Game", "Addition Snake Game", "Addition Strip Board","Subtraction Snake Game", "Subtraction Strip Board"],
     data5: [],
     data6: [ "संज्ञा","क्रिया","विशेषण"]
   },
@@ -154,8 +139,7 @@ export const ageWiseData = [
     age: "5.5 Y",
     data1: [],
     data2: [],
-    data3: [
-      "Written Question Game", "Verb", "Adverb", "Logical Adverb", "Continuation Of Commands",
+    data3: ["Written Question Game", "Verb", "Adverb", "Logical Adverb", "Continuation Of Commands",
       "Word Study - Synonyms", "Word Study - Homophones", "Word Study - Gender",
       "Word Study - Compound Words", "Word Study - Numbers", "Word Study - Word Families",
       "Word Study - Prefix", "Word Study - Suffix"
