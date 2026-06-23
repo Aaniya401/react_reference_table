@@ -18,9 +18,10 @@ export const titles = [
   { name: "Age", color: "blue" },
   { name: "Practical Life", color: "blue" },
   { name: "Sensorial", color: "blue" },
-  { name: "Language", color: "blue" },
+  { name: "English", color: "blue" },
   { name: "Mathematics", color: "blue" },
   { name: "Culture", color: "blue" }
+  { name: "Hindi", color: "blue" }
 ];
 
 
