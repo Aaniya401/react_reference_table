@@ -8,8 +8,16 @@ import {
 
 import { ages } from "../constants/constants"
 import { RefreshCwIcon } from "lucide-react"
+import type { Dispatch, SetStateAction } from "react"
 
-function PresentationSelect({selectedAge, setSelectedAge, setIsPreviousVisible, setIsNextVisible}) {
+type PresentationSelectProps = {
+    selectedAge: string;
+    setSelectedAge: Dispatch<SetStateAction<string>>;
+    setIsPreviousVisible: Dispatch<SetStateAction<boolean>>;
+    setIsNextVisible: Dispatch<SetStateAction<boolean>>;
+};
+
+function PresentationSelect({selectedAge, setSelectedAge, setIsPreviousVisible, setIsNextVisible}: PresentationSelectProps) {
     const handleChange = (value:string) => {
         setSelectedAge(value)
         setIsNextVisible(false)

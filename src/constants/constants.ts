@@ -24,6 +24,8 @@ export const titles = [
   { name: "Hindi", color: "blue" }
 ];
 
+export type AgeWiseDataItem = { age: string; data1: string[]; data2: string[]; data3: string[]; data4: string[]; data5: string[]; data6: string[]; };
+
 
 export const ageWiseData = [
   {
@@ -46,7 +48,7 @@ export const ageWiseData = [
     data3: [],
     data4: [],
     data5: [],
-    data6: []
+    data6: [],
   },
   {
     age: "3 Y",
@@ -55,7 +57,7 @@ export const ageWiseData = [
     data3: [],
     data4: [],
     data5: [],
-    data6: []
+    data6: [],
   },
   {
     age: "3 - 3.5 Y",
@@ -64,7 +66,7 @@ export const ageWiseData = [
     data3: [],
     data4: [],
     data5: [],
-    data6: [] 
+    data6: [],
   },
   {
     age: "3.5 Y",
@@ -103,7 +105,7 @@ export const ageWiseData = [
     data3: ["Action Cards"],
     data4: [],
     data5: [],
-    data6: []
+    data6: [],
   },
   {
     age: "4.5 Y",
@@ -113,7 +115,7 @@ export const ageWiseData = [
     data4: ["Decimal System", "Addition Multiplication Subtraction Division", "Stamp Game Addition Multiplication Subtraction Division","Teen Beads", "Teen Boards", "Teen Beads And Board", "Tens Beads And Boards",
       "Linear Counting", "Skip Counting", "Fractions", "Fractions Addition Multiplication Subtraction Division"],
     data5: [],
-    data6: []
+    data6: [],
   },
   {
     age: "5 Y",
@@ -123,7 +125,7 @@ export const ageWiseData = [
     ],
     data4: ["Dot Game", "Addition Snake Game", "Addition Strip Board","Subtraction Snake Game", "Subtraction Strip Board"],
     data5: [],
-    data6: [ "संज्ञा","क्रिया","विशेषण"]
+    data6: ["संज्ञा","क्रिया","विशेषण"]
   },
   {
     age: "5 - 5.5 Y",
@@ -148,7 +150,7 @@ export const ageWiseData = [
       "Unit Division Board", "Short Bead Frame - Addition Subtraction Multiplication Division", "Hierarchies"
     ],
     data5: [],
-    data6: []
+    data6: [],
   },
   {
     age: "5.5 - 6 Y",
@@ -157,7 +159,7 @@ export const ageWiseData = [
     data3: [],
     data4: ["Subtraction Chart 1", "Subtraction Chart 2", "Division Chart 1", "Division Chart 2"],
     data5: [],
-    data6: []
+    data6: [],
   },
   {
     age: "6 Y",
@@ -166,6 +168,6 @@ export const ageWiseData = [
     data3: ["Reading Analysis"],
     data4: ["Long Bead Frame", "Long Bead Frame Addition Multiplication Subtraction", "Division With Rack And Tubes"],
     data5: [],
-    data6: []
+    data6: [],
   }
 ];

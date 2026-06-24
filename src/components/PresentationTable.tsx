@@ -6,9 +6,9 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table"
-import { titles } from "@/constants/constants"
+import { titles, type AgeWiseDataItem } from "@/constants/constants"
 
-function PresentationTable({ filteredAgeWiseData }) {
+function PresentationTable({ filteredAgeWiseData }: { filteredAgeWiseData: AgeWiseDataItem[] }) {
   return (
     <div className="w-full overflow-x-auto">
       <Table className="min-w-full table-auto border border-gray-300 rounded-lg shadow-md">
@@ -42,7 +42,7 @@ function PresentationTable({ filteredAgeWiseData }) {
                   {element.age}
                 </TableCell>
 
-                {[element.data1, element.data2, element.data3, element.data4, element.data5].map(
+                {[element.data1, element.data2, element.data3, element.data4, element.data5, element.data6].map(
                   (data, i) => (
                     <TableCell key={i} className="px-4 py-3 border align-top">
                       {data.length === 0 ? (
