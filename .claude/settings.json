@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)",
+      "Bash(npx eslint *)",
+      "Bash(cp tsconfig.app.json /tmp/tsconfig.app.json.bak)",
+      "Bash(node -e ' *)"
+    ]
+  }
+}
