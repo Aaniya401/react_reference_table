@@ -83,8 +83,7 @@ export const ageWiseData = [
     data3: [],
     data4: [],
     data5: [],
-    data6: ["चल अक्षर पेटी"]  
- ]
+    data6: ["चल अक्षर पेटी"]
   },
   {
     age: "4 Y",
